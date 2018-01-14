@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_16dp"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/done"
+        android:textSize="24sp" />
+
+    <!-- Product info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Info_Header"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="@string/product_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_book_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:inputType="textCapWords|textMultiLine"
+                android:scrollHorizontally="false" />
+
+            <EditText
+                android:id="@+id/et_book_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/author"
+                android:inputType="textCapWords|textMultiLine"
+                android:scrollHorizontally="false" />
+
+            <EditText
+                android:id="@+id/et_book_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btn_decrease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/editorColorPrimary"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+
+                <EditText
+                    android:id="@+id/et_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_8dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:hint="@string/quantity"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/btn_increase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/editorColorPrimary"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Supplier info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Info_Header"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_supplier_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supplier_name"
+                android:inputType="textCapWords|textMultiLine"
+                android:scrollHorizontally="false" />
+
+            <EditText
+                android:id="@+id/et_supplier_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supplier_email"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:scrollHorizontally="false" />
+
+
+            <EditText
+                android:id="@+id/et_supplier_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supplier_phone"
+                android:inputType="phone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/delete"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Inventory</string>
+
+    <!-- STRINGS FOR CATALOG ACTIVITY -->
+    <string name="add">+</string>
+    <string name="empty_title_text">0 records found</string>
+    <string name="empty_subtitle_text">Click the \'+\' above to insert an item into the database.
+    Fields marked with * are required.</string>
+    <string name="dummy_data_text">Insert dummy data for demo</string>
+
+    <!-- STRINGS FOR BOOK ITEM -->
+    <string name="dollar_sign">$</string>
+    <string name="quantity">Quantity</string>
+    <string name="sale">Sale</string>
+
+    <!-- STRINGS FOR EDITOR ACTIVITY -->
+    <string name="add_item">Add item</string>
+    <string name="edit_item">Edit item</string>
+    <string name="done">Done</string>
+    <!-- Product info -->
+    <string name="product_info">Product Info</string>
+    <string name="title">*Title</string>
+    <string name="author">Author</string>
+    <string name="price">*Price</string>
+    <string name="zero">0</string>
+
+    <!-- Supplier info -->
+    <string name="supplier_info">Supplier Info</string>
+    <string name="supplier_name">*Supplier name</string>
+    <string name="supplier_email">supplier email</string>
+    <string name="supplier_phone">*Supplier phone</string>
+
+    <string name="delete">Delete</string>
+
+    <!-- Alert dialogs -->
+    <string name="unsaved_changes">You have unsaved changes</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="confirm_delete">Are you sure you want to delete?</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Action feedback -->
+    <!-- Toast message in editor when new book insertion fails [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_failed">Book insert failed.</string>
+
+    <!-- Toast message in editor when new book is successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_successful">Book insert successful!</string>
+
+    <!-- Toast message in editor when book update fails [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_failed">Book update failed.</string>
+
+    <!-- Toast message in editor when book is successfully update [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_successful">Book update successful!</string>
+
+    <!-- Toast message in editor when current book was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+</resources>
